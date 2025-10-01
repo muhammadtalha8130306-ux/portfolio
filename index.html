@@ -1,0 +1,82 @@
+<!doctype html>
+<button class="btn" onclick="document.getElementById('projects').scrollIntoView({behavior:'smooth'})">View Projects</button>
+<a href="#contact" style="align-self:center;color:var(--muted);text-decoration:none">Or send a message ↓</a>
+</div>
+</div>
+
+
+<section id="projects">
+<h2 style="margin-top:18px">Projects</h2>
+<div class="projects">
+<div class="proj">
+<h3 style="margin:0 0 6px">Project One</h3>
+<div style="color:var(--muted);font-size:13px">Short description — what tech and the impact.</div>
+<div style="margin-top:8px"><a href="#" style="color:var(--accent);text-decoration:none">Live →</a> · <a href="#" style="color:var(--muted);text-decoration:none">Source</a></div>
+</div>
+<div class="proj">
+<h3 style="margin:0 0 6px">Project Two</h3>
+<div style="color:var(--muted);font-size:13px">Short description — one-liner.</div>
+<div style="margin-top:8px"><a href="#" style="color:var(--accent);text-decoration:none">Live →</a> · <a href="#" style="color:var(--muted);text-decoration:none">Source</a></div>
+</div>
+</div>
+</section>
+
+
+</div>
+
+
+<aside style="width:100%">
+<div class="card">
+<h3 style="margin-top:0">About</h3>
+<p style="color:var(--muted);font-size:14px">Short intro: where you're from, what you do, what you're looking for. Keep 2–3 lines.</p>
+<h4 style="margin-bottom:6px">Skills</h4>
+<div class="skills">
+<div class="skill">HTML</div>
+<div class="skill">CSS</div>
+<div class="skill">JavaScript</div>
+<div class="skill">React</div>
+<div class="skill">Node.js</div>
+</div>
+
+
+<h4 style="margin-top:12px;margin-bottom:6px">Contact</h4>
+<div style="font-size:13px;color:var(--muted)">Email: <a href="mailto:you@example.com" style="color:var(--accent);text-decoration:none">you@example.com</a></div>
+<div style="margin-top:8px">Social: <a href="#" style="color:var(--accent);text-decoration:none">GitHub</a> · <a href="#" style="color:var(--accent);text-decoration:none">LinkedIn</a></div>
+</div>
+
+
+<div style="height:12px"></div>
+<div class="card">
+<h4 style="margin:0 0 8px">Quick CV</h4>
+<div style="color:var(--muted);font-size:13px">Available for freelance · Open to remote roles</div>
+</div>
+</aside>
+</section>
+
+
+<section id="contact" style="margin-top:22px">
+<div class="card">
+<h3 style="margin-top:0">Contact Me</h3>
+<form onsubmit="event.preventDefault();alert('Replace this with your backend or a service like Formspree/Gumroad/Netlify Forms');">
+<div style="display:flex;flex-direction:column;gap:8px">
+<input type="text" placeholder="Your name" required style="padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.03);background:transparent;color:inherit" />
+<input type="email" placeholder="Email" required style="padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.03);background:transparent;color:inherit" />
+<textarea placeholder="Message" rows="4" style="padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.03);background:transparent;color:inherit"></textarea>
+<button class="btn" type="submit">Send</button>
+</div>
+</form>
+</div>
+</section>
+
+
+<footer>
+<div>Made with ❤️ — Your Name • © <span id="year"></span></div>
+</footer>
+</div>
+
+
+<script>
+document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
